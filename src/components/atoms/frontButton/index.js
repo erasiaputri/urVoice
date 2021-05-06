@@ -5,7 +5,7 @@ const ButtonOne = ({title,color,tColor,weight,onPress,radius}) => {
 
   const styles = StyleSheet.create({
     container:{borderRadius:radius,
-      marginVertical:10,
+      marginVertical:19,
       backgroundColor:color,
       height:55,
       width:133,

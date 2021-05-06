@@ -1,9 +1,9 @@
 import React from 'react'
-import {View,Text,StyleSheet} from 'react-native'
+import {View,Text,StyleSheet,TouchableOpacity} from 'react-native'
 import {BackButton} from '../../atoms'
 import {LogoLeft,LineHeader} from '../../../assets'
 
-const Header = ({title1,title2,color}) => {
+const Header = ({title1,title2,color,onPress}) => {
   const style = StyleSheet.create({
     outer:{
       flex:1,
@@ -47,7 +47,7 @@ const Header = ({title1,title2,color}) => {
   })
   return (
     <View style={style.outer}>
-      <BackButton style={style.leftPos} width={100} height={100}/>
+      <BackButton style={style.leftPos} onPress={onPress}/>
       <View style={style.container}>
         <View style={style.textCon}>
           <Text style={style.text}>{title1}</Text>

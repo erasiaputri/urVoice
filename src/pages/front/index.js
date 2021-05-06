@@ -14,7 +14,7 @@ const Front = ({navigation}) => {
       <SplashLogoBlur style={style.logo2}/>
       <View style={style.btnCon}>
         <ButtonOne title='Sign In' tColor='#fff' color='#5B68DF' weight='bold' radius={10} onPress={()=>navigation.navigate('Login')}/>
-        <ButtonOne title='Sign Up' tColor='#fff' color='#67BE24' weight='bold' radius={10}/>
+        <ButtonOne title='Sign Up' tColor='#fff' color='#67BE24' weight='bold' radius={10} onPress={()=>navigation.navigate('SignUp')}/>
       </View>
     </View>
   )
