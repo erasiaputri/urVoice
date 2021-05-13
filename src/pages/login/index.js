@@ -9,7 +9,7 @@ const Login = ({navigation}) => {
       <View style={{width:'100%',position:'absolute',alignItems:'center',bottom:165}}>
         <Inputs holder="Email address" bottom={20}/>
         <Inputs holder="Password"/>
-        <ButtonOne title='LOGIN' tColor='#fff' color='#7688B6' radius={50}/>
+        <ButtonOne title='LOGIN' tColor='#fff' color='#7688B6' radius={50} onPress={()=>navigation.navigate('Discover')}/>
       </View>
     </View>
   )
