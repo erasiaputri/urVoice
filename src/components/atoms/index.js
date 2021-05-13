@@ -1,5 +1,6 @@
 import ButtonOne from './frontButton'
 import BackButton from './backButton'
 import Inputs from './inputs'
-
-export {ButtonOne,BackButton,Inputs}
+import UserItems from './userItem'
+import PlaylistTitle from './playlistTitle'
+export {ButtonOne,BackButton,Inputs,UserItems,PlaylistTitle}

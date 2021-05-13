@@ -1,6 +1,7 @@
 import React from 'react'
 import {View,Text,TextInput,StyleSheet} from 'react-native'
 import {BurgerBtn,User} from '../../../assets'
+
 const MainHeader = () => {
   return (
     <View style={{alignItems:'center',height:100,width:348,flexDirection:'row',justifyContent:'space-between'}}>
