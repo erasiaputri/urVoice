@@ -13,6 +13,6 @@ import SearchLogo from './searchLogo.svg'
 import SplashLogo from './splashLogo.svg'
 import SplashLogoBlur from './splashLogoBlur.svg'
 import LineHeader from './lineRow.svg'
-
-export {BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
+import User from './user.svg'
+export {User,BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
   ListActive,Lists,LogoLeft,LogoRight,Profile,SearchLogo,SplashLogo,SplashLogoBlur,LineHeader};
