@@ -1,6 +1,6 @@
 import React from 'react'
-import {View,Text} from 'react-native'
-import {MainHeader} from '../../components'
+import {View,Text,ScrollView} from 'react-native'
+import {MainHeader,HotRecom} from '../../components'
 
 const Discover = () => {
   return (
@@ -8,6 +8,7 @@ const Discover = () => {
       <MainHeader/>
       <View>
         <Text>Hot Recommended</Text>
+        <HotRecom/>
       </View>
     </View>
   )

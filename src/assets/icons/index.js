@@ -14,5 +14,6 @@ import SplashLogo from './splashLogo.svg'
 import SplashLogoBlur from './splashLogoBlur.svg'
 import LineHeader from './lineRow.svg'
 import User from './user.svg'
-export {User,BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
+import HotUser from './hotUser.svg'
+export {User,HotUser,BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
   ListActive,Lists,LogoLeft,LogoRight,Profile,SearchLogo,SplashLogo,SplashLogoBlur,LineHeader};
