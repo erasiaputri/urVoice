@@ -23,7 +23,8 @@ import WhiteFav from './whiteFav.svg'
 import WhiteList from './whitelist.svg'
 import Setting from './setting.svg'
 import Prof from './Ellipse.svg'
+import PlayIcon from './play.svg'
 
-export {Prof,ProfActive,WhiteDash,WhiteFav,WhiteList,Setting,User,ProfPic,Tracks,HotUser,
+export {PlayIcon,Prof,ProfActive,WhiteDash,WhiteFav,WhiteList,Setting,User,ProfPic,Tracks,HotUser,
   BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
   ListActive,Lists,LogoLeft,LogoRight,Profile,SearchLogo,SplashLogo,SplashLogoBlur,LineHeader};
