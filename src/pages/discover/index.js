@@ -14,10 +14,10 @@ const Discover = ({navigation}) => {
         </View>
         <View style={{paddingHorizontal:15,minHeight:400}}>
           <Text style={{fontSize:18,fontWeight:'bold',marginBottom:20}}>Hot Playlist</Text>
-          <HotPlaylist title='Comedy Playlist' img={1} number={241} color='#000'/>
-          <HotPlaylist title='My Science List' img={2} number={100} color='#000'/>
-          <HotPlaylist title='Sport Inspiration' img={3} number={241} color='#000'/>
-          <HotPlaylist title='Life Journey' img={4} number={100} color='#000'/>
+          <HotPlaylist title='Comedy Playlist' img={1} number={241} color='#000' hasFeature={true}/>
+          <HotPlaylist title='My Science List' img={2} number={100} color='#000' hasFeature={true}/>
+          <HotPlaylist title='Sport Inspiration' img={3} number={241} color='#000' hasFeature={true}/>
+          <HotPlaylist title='Life Journey' img={4} number={100} color='#000' hasFeature={true}/>
         </View>
       </ScrollView>
       <BottomTabs home={()=>navigation.navigate('Discover')}

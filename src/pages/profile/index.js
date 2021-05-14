@@ -18,7 +18,7 @@ const Profile = ({navigation}) => {
   },[])
   return (
     <View style={{flex:1,backgroundColor:'#28253A',flexDirection:'column',alignItems:'center'}}>
-      <MainHeader hasTitle={true}/>
+      <MainHeader hasTitle={true} title='Profile' color='#fff'/>
       <ScrollView>
           {
             users &&

@@ -2,7 +2,7 @@ import React from 'react'
 import {View,Text,TextInput,StyleSheet} from 'react-native'
 import {BurgerBtn,User,Setting} from '../../../assets'
 
-const MainHeader = ({hasPhoto,hasTitle}) => {
+const MainHeader = ({hasPhoto,hasTitle,title,color}) => {
   return (
     <View style={{alignItems:'center',height:100,width:348,flexDirection:'row',justifyContent:'space-between'}}>
       <BurgerBtn/>
@@ -11,12 +11,12 @@ const MainHeader = ({hasPhoto,hasTitle}) => {
         <View style={style.inputContainer}>
           <TextInput
             style={{fontSize: 18}}
-            placeholder="Search for food"
+            placeholder="Search for music"
           />
         </View>
       }
       {
-        hasTitle && <Text style={{fontSize:26,fontWeight:'bold',color:'#fff'}}>Profile</Text>
+        hasTitle && <Text style={{fontSize:26,fontWeight:'bold',color:color}}>{title}</Text>
       }
 
       {
