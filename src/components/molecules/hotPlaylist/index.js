@@ -1,21 +1,39 @@
 import React from 'react'
-import {View,Text,Image} from 'react-native'
+import {View,Text,Image,StyleSheet} from 'react-native'
 import {HotPlaylistOne,HotPlaylistTwo,HotPlaylistThree,HotPlaylistFour,HotTwo,Favorite,Tracks} from '../../../assets'
 import {PlaylistTitle} from '../../../components'
 
 const HotPlaylist = ({img,title,number,number2,color}) => {
+  const style=StyleSheet.create({
+    img:{
+      height:159,
+      width:150,
+      borderRadius:10
+    },
+    shadow:{
+      shadowColor: "#fff",
+      shadowOffset: {
+      	width: 0,
+      	height: 1,
+      },
+      shadowOpacity: 0.20,
+      shadowRadius: 1.41,
+
+      elevation: 2,
+    }
+  })
   let image;
   if (img==1) {
-    image = <Image source={HotPlaylistOne} style={{height:159,width:150}}/>
+    image = <Image source={HotPlaylistOne} style={style.img}/>
   } else if (img==2) {
-    image = <Image source={HotPlaylistTwo} style={{height:159,width:150}}/>
+    image = <Image source={HotPlaylistTwo} style={style.img}/>
   } else if (img==3) {
-    image = <Image source={HotPlaylistThree} style={{height:159,width:150}}/>
+    image = <Image source={HotPlaylistThree} style={style.img}/>
   } else{
-    image = <Image source={HotPlaylistFour} style={{height:159,width:150}}/>
+    image = <Image source={HotPlaylistFour} style={style.img}/>
   }
   return (
-    <View>
+    <View style={style.shadow}>
       {image}
       <PlaylistTitle title={title} color={color}/>
       <View style={{flexDirection:'row',width:180,marginBottom:20}}>
