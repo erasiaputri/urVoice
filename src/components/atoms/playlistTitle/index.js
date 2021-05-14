@@ -1,9 +1,9 @@
 import React from 'react'
 import {Text} from 'react-native'
 
-const PlaylistTitle = ({title}) => {
+const PlaylistTitle = ({title,color}) => {
   return (
-    <Text>{title}</Text>
+    <Text style={{color:color}}>{title}</Text>
   )
 }
 

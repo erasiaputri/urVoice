@@ -16,5 +16,12 @@ import LineHeader from './lineRow.svg'
 import User from './user.svg'
 import HotUser from './hotUser.svg'
 import Tracks from './tracks.svg'
-export {User,Tracks,HotUser,BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
+import ProfPic from './profpic.svg'
+import ProfActive from './profActive.svg'
+import WhiteDash from './whitedash.svg'
+import WhiteFav from './whiteFav.svg'
+import WhiteList from './whitelist.svg'
+import Setting from './setting.svg'
+
+export {ProfActive,WhiteDash,WhiteFav,WhiteList,Setting,User,ProfPic,Tracks,HotUser,BackBtn,BurgerBtn,Dashboard,DashboardActive,Favorite,FavoriteActive,
   ListActive,Lists,LogoLeft,LogoRight,Profile,SearchLogo,SplashLogo,SplashLogoBlur,LineHeader};

@@ -1,18 +1,30 @@
 import React from 'react'
 import {View,Text,TextInput,StyleSheet} from 'react-native'
-import {BurgerBtn,User} from '../../../assets'
+import {BurgerBtn,User,Setting} from '../../../assets'
 
-const MainHeader = () => {
+const MainHeader = ({hasPhoto,hasTitle}) => {
   return (
     <View style={{alignItems:'center',height:100,width:348,flexDirection:'row',justifyContent:'space-between'}}>
       <BurgerBtn/>
-      <View style={style.inputContainer}>
-        <TextInput
-          style={{fontSize: 18}}
-          placeholder="Search for food"
-        />
-      </View>
-      <User/>
+      {
+        !hasTitle &&
+        <View style={style.inputContainer}>
+          <TextInput
+            style={{fontSize: 18}}
+            placeholder="Search for food"
+          />
+        </View>
+      }
+      {
+        hasTitle && <Text style={{fontSize:26,fontWeight:'bold',color:'#fff'}}>Profile</Text>
+      }
+
+      {
+        hasPhoto && <User/>
+      }
+      {
+        !hasPhoto && <Setting/>
+      }
     </View>
   )
 }
